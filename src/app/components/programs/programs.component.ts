@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-programs',
   templateUrl: './programs.component.html',
-  styleUrls: ['./programs.component.sass']
+  styleUrls: ['./programs.component.css'],
 })
-export class ProgramsComponent {
-
-}
+export class ProgramsComponent {}
