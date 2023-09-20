@@ -6,11 +6,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { ProgramsComponent } from './components/programs/programs.component';
 import { ExercisesComponent } from './components/exercises/exercises.component';
+import { authGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
+    canActivate: [authGuard],
     children: [
       { path: '', redirectTo: 'customers', pathMatch: 'full' },
       { path: 'customers', component: CustomersComponent },
