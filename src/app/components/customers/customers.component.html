@@ -1,1 +1,12 @@
-<p>customers works!</p>
+<div class="customers__container">
+  <ul *ngIf="customers.length === 0">
+    <li class="customers__li">
+      <h1>Loading...</h1>
+    </li>
+  </ul>
+  <ul *ngIf="customers.length !== 0">
+    <li class="customers__li" *ngFor="let customer of customers">
+      <app-card [data]="customer" />
+    </li>
+  </ul>
+</div>

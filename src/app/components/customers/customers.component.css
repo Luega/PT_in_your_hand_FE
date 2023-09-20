@@ -1,0 +1,8 @@
+.customers__container {
+  padding: 2rem;
+}
+
+.customers__li {
+  margin: 1rem;
+  list-style: none;
+}

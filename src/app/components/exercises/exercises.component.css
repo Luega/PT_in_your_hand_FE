@@ -1,0 +1,8 @@
+.exercises__container {
+  padding: 2rem;
+}
+
+.exercises__li {
+  margin: 1rem;
+  list-style: none;
+}

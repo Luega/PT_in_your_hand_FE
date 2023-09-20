@@ -1,0 +1,8 @@
+.programs__container {
+  padding: 2rem;
+}
+
+.programs__li {
+  margin: 1rem;
+  list-style: none;
+}

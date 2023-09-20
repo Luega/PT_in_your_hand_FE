@@ -1,1 +1,12 @@
-<p>programs works!</p>
+<div class="programs__container">
+  <ul *ngIf="programs.length === 0">
+    <li class="programs__li">
+      <h1>Loading...</h1>
+    </li>
+  </ul>
+  <ul *ngIf="programs.length !== 0">
+    <li class="programs__li" *ngFor="let program of programs">
+      <app-card [data]="program" />
+    </li>
+  </ul>
+</div>
