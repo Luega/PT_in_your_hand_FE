@@ -1,1 +1,12 @@
-<p>exercises works!</p>
+<div class="exercises__container">
+  <ul *ngIf="exercises.length === 0">
+    <li class="exercises__li">
+      <h1>Loading...</h1>
+    </li>
+  </ul>
+  <ul *ngIf="exercises.length !== 0">
+    <li class="exercises__li" *ngFor="let exercise of exercises">
+      <app-card [data]="exercise" />
+    </li>
+  </ul>
+</div>
