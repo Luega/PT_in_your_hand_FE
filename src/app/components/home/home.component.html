@@ -1,0 +1,13 @@
+<main>
+  <h1>MY APP</h1>
+  <ul *ngIf="customers.length === 0">
+    <li>
+      <h1>Loading...</h1>
+    </li>
+  </ul>
+  <ul *ngIf="customers.length !== 0">
+    <li *ngFor="let customer of customers">
+      <h1>{{ customer.first_name }}</h1>
+    </li>
+  </ul>
+</main>
