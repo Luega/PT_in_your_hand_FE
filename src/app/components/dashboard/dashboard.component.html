@@ -1,1 +1,18 @@
-<p>dashboard works!</p>
+<mat-drawer-container class="container">
+  <mat-drawer mode="side" opened>
+    <mat-list role="list">
+      <mat-list-item role="listitem" routerLink="customers"
+        >Customers</mat-list-item
+      >
+      <mat-list-item role="listitem" routerLink="programs"
+        >Programs</mat-list-item
+      >
+      <mat-list-item role="listitem" routerLink="exercises"
+        >Exercises</mat-list-item
+      >
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet />
+  </mat-drawer-content>
+</mat-drawer-container>
